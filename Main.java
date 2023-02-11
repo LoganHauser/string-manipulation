@@ -10,6 +10,8 @@ public class Main {
 
         //Create a Scanner object
         Scanner inputScanner = new Scanner(System.in);
+        //Ask the user to input a string
+        System.out.println("Enter a String:");
         //Print the words from the user-inputted string
         printWordsFromString(inputScanner.nextLine());
         //Close the Scanner
@@ -41,7 +43,7 @@ public class Main {
             //Get the character at the current index
             char character = string.charAt(i);
             //If the character is a space
-            if (character == ' ') {
+            if (character == ' ' || character == '\t') {
                 //Print the current word
                 System.out.println(word);
                 //Clear the word variable
